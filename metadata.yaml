@@ -1,0 +1,21 @@
+composer:
+  last: Donberger
+  first: Georg Joseph
+title: Te Deum
+id: HugD X,3
+genre: hymn
+scoring: S, A, T, B (solo), S, A, T, B (coro), 5 clno (C), timp (C–G), 2 vl, b, org
+ark: 68748/e1gjdx3
+license: cc-by-sa-4.0
+sources:
+  B1:
+    siglum: A-LA
+    shelfmark: 1309
+    date: 1735–68
+    rism: 603002462
+    license: public domain
+    principal: true
+    notes: "14 parts, 33.5 × 21.5 cm. Hand-ruled paper, 12 staves per page (10 mm) in light brown ink and music in dark brown ink. A clean manuscript copy by unidentified hand. Cover title: “Te Deum Laudamus | â | Canto Alto | Tenore Basſo | Violinis 2 | Clarino 1 | Clarino 2 | Clarino 3 | Clarino 4 | Clarino 5 | Tympana 1 | Organo Con | Violone | [by other hand:] Donberger.”. Parts held and extent: S coro (3 fol.), A coro (3), T coro (3), B coro (3), clno 1 (1), clno 2 (1), clno 3 (1), clno 4 (1), clno 5 (1), timp (1), vl 1 (2), vl 2 (2), vlne (2), org (2)."
+imslp:
+parts:
+  ottoni: Clarino I, II in C\\Timpani in C–G
