@@ -1,12 +1,28 @@
 \version "2.24.0"
 
-#(define option-movement-title-format "number-title")
-#(define option-print-all-bar-numbers #t)
+#(define option-movement-title-format "title")
+#(define option-print-all-bar-numbers #f)
 \include "ees.ly"
 \include "ees_articulate.ly"
 
 
-tempoA = \tempoMarkup "[no tempo]"
+markMezaPuncto = {
+  \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+  \once \override Score.RehearsalMark.break-visibility = #end-of-line-visible
+  \mark \markup \remark "meza puncto"
+}
+
+tempoTeDeum = \tempoMarkup "[Allegro]"
+tempoTeAeternum = \tempoMarkup "[Allegro]" %90
+tempoTePerOrbem = \tempoMarkup "Vivace" %105
+tempoTeErgo = \tempoMarkup "Adagio" %60
+tempoAeterna = \tempoMarkup "Presto" %100
+tempoLaudamus = \tempoMarkup "Adagio" %50
+tempoLaudamusB = \tempoMarkup "Presto" %100
+tempoDignare = \tempoMarkup "Adagio" %60
+tempoMiserere = \tempoMarkup "Adagio" %75
+tempoInTeDomine = \tempoMarkup "Vivace" %100
+tempoNonConfundar = \tempoMarkup "Adagio" %60
 
 
 \include "notes/clno1.ly"

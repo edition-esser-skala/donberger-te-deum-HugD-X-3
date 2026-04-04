@@ -5,7 +5,7 @@
 
 \book {
   \bookpart {
-    \section "X,3" "Te Deum"
+    \section "Te Deum"
     \addTocEntry
     \paper { indent = 2\cm }
     \score {

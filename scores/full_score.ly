@@ -5,42 +5,40 @@
 
 \book {
   \bookpart {
-    \section "X,3" "Te Deum"
+    \section "Te Deum"
     \addTocEntry
     \paper { indent = 3\cm }
     \score { %\articulate
       <<
-        \new StaffGroup <<
-          \new GrandStaff \with { \setGroupDistance #10 #15 } <<
-            \set GrandStaff.instrumentName = \markup { \rotate #90 "Clarino" \hspace #10 }
-            \new Staff {
-              \set Staff.instrumentName = "I"
-              \ClarinoI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "II"
-              \ClarinoII
-            }
-            \new Staff {
-              \set Staff.instrumentName = "III"
-              \ClarinoIII
-            }
-            \new Staff {
-              \set Staff.instrumentName = "IV"
-              \ClarinoIV
-            }
-            \new Staff {
-              \set Staff.instrumentName = "V"
-              \ClarinoV
-            }
-          >>
+        \new StaffGroup \with { \setGroupDistance #10 #15 } <<
+          \set StaffGroup.instrumentName = \markup { \rotate #90 "Clarino in C" \hspace #10 }
+          \new Staff {
+            \set Staff.instrumentName = "I"
+            \ClarinoI
+          }
+          \new Staff {
+            \set Staff.instrumentName = "II"
+            \ClarinoII
+          }
+          \new Staff {
+            \set Staff.instrumentName = "III"
+            \ClarinoIII
+          }
+          \new Staff {
+            \set Staff.instrumentName = "IV"
+            \ClarinoIV
+          }
+          \new Staff {
+            \set Staff.instrumentName = "V"
+            \ClarinoV
+          }
         >>
         \new Staff {
           \set Staff.instrumentName = \transposedTimp "C" "" "G" ""
           \Timpani
         }
         \new StaffGroup <<
-          \new GrandStaff \with { \smallGroupDistance } <<
+          \new GrandStaff <<
             \set GrandStaff.instrumentName = "Violino"
             \new Staff {
               \set Staff.instrumentName = "I"
@@ -87,7 +85,7 @@
         \new FiguredBass { \BassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 90 }
+      \midi { \tempo 4 = 240 } % see definitions
     }
   }
 }
